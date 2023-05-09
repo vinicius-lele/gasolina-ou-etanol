@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:: Etanol ou Gasolina ::.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="combustiveis">
+            <div class="gasolina">
+                <div class="nome">GASOLINA</div>
+                <label for="km-por-litro-gas">KM por litro</label>
+                <input type="text" id="km-por-litro-gas" class="inputs">
+                <label for="preco-gas">Preço:</label>
+                <input type="text" id="preco-gas"class="inputs">
+            </div>
+            <div class="etanol">
+                <div class="nome">ETANOL</div>
+                <label for="km-por-litro-eta">KM por litro</label>
+                <input type="text" id="km-por-litro-eta" class="inputs">
+                <label for="preco-eta">Preço:</label>
+                <input type="text" id="preco-eta"class="inputs">
+            </div>
+        </div>
+        <div class="container-resultado">
+            <div id="resultado"></div>
+            <div class="btn"><button id="gerar-resultado">Gerar Resultado</button></div>
+        </div>
+    </div>
+    <span class="como-acontece" id="abrir-modal">Saiba como funciona o cálculo</span>
+
+    <div id="modal" class="modal">
+
+        
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Feito regra de 3 simples e comparado a diferença entre os tipos de combustíveis</p>
+          <p>Exemplo: Se R$ 3,00 faz 12 km com etanol, R$ 100,00 faz quantos km?</p>
+          <p>O mesmo é feito com a gasolina (e seus respectivos valores, claro)</p>
+          <p>Pegamos os resultados e o que fizer uma kilometragem maior, é o que mais vale a pena abastecer.</p>
+        </div>
+      
+      </div>
+    
+    <script src="engine.js"></script>
+</body>
+</html>
